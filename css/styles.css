@@ -1,6 +1,7 @@
 .hero-bg {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/accessibility-hero-banner.jpg") no-repeat center center fixed;
+    url('../img/accessibility-hero-banner.jpg') no-repeat center center
+      fixed;
   background-size: cover;
 }
 
@@ -81,9 +82,9 @@
   transition: all 0.2s ease-in-out;
 }
 .is-shady:hover {
-  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13),
+    0 6px 6px rgba(0, 0, 0, 0.19);
 }
-
 
 .has-same-height .card {
   height: 350px;
@@ -91,7 +92,7 @@
 }
 
 .skills-content .media + .media {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
 .skills-content .progress {
@@ -103,8 +104,8 @@
 }
 
 .info-tiles {
-  margin: .75rem auto;
-  padding: 0 .75rem;
+  margin: 0.75rem auto;
+  padding: 0 0.75rem;
 }
 
 .button.is-primary.is-alt {
@@ -118,7 +119,7 @@
 .post {
   margin: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #e6eaee;
 }
 .post:last-child {
   padding-bottom: 0;
@@ -126,9 +127,8 @@
 }
 
 .forum-list li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 
 @media screen and (max-width: 1087px) {
   .navbar-menu {
@@ -145,8 +145,85 @@
   width: 100%;
 }
 
-li {
+.accessibility_cta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border-bottom-right-radius: 4px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+.vh-ul-item-marker {
+  list-style: disc;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.vh-ul-item-marker > li {
+  padding-left: 20px;
+  margin-left: -30px;
+}
+
+.column .vh-ul-item-marker > li {
+  padding-left: 10px;
+  margin-left: -10px;
+}
+
+.button.accessible-button-bgcolor {
+  background-color: #0e78be;
+}
+
+.subtitle.accessible-header-color {
+  color: #454545;
+}
+.hero.is-info.accessible-header-bgcolor {
+  background-color: #0e78be;
+}
+.hero.is-info.accessible-header-bgcolor .subtitle {
+  color: #fff;
+}
+.hero.is-info .tabs.is-boxed li.is-active.accessible-text-fb a span,
+.accessible-text {
+  color: #0e78be;
+}
+.tag:not(body).is-danger.accessible-text,
+.tag.is-light.is-danger.accessible-text {
+  background-color: #e6002e;
+}
+.help.is-danger.accessible-tex {
+  color: #e6002e;
+}
+.tag.is-primary.accessible-text {
+  background-color: #008571;
+}
+.tag.is-success.accessible-text {
+  background-color: #17873e;
+}
+.help.is-success.accessible-text {
+  color: #17873e;
+}
+.has-text-grey-light.accessible-text {
+  color: #757575 !important;
+}
+/* li {
   list-style: none;
+} */
+
+.accessible-link {
+  text-decoration: underline;
 }
 
 .hero.is-fullheight {
@@ -159,14 +236,39 @@ li {
   padding: 1.25em 1.5em;
 }
 
+.vh-ol-item-marker {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.vh-ol-item-marker li {
+  padding-left: 20px;
+  margin-left: -30px;
+}
+
+.ol-list {
+  counter-reset: list;
+}
+
 .ol-list li {
   position: relative;
   display: flex;
   align-items: center;
+  list-style-type: none;
 }
 
 .ol-list li::before {
-  content: "";
+  counter-increment: list;
+  content: counter(list) '. ';
+}
+
+.ol-list li span {
+  display: flex;
+  align-items: center;
+}
+
+.ol-list li > span::before {
+  content: '';
   background: url(../img/arrow_sans_right-512.png) no-repeat;
   display: inline-block;
   text-align: center;
@@ -175,4 +277,11 @@ li {
   width: 40px;
   height: 40px;
   background-size: contain;
+}
+
+input[type='checkbox']:focus,
+input[type='radio']:focus,
+a:focus {
+  border-color: #3273dc;
+  box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
 }
