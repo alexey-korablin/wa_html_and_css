@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <a href="#maincontent" name="maincontent" class="accessibility_cta" tabindex="1">
+  <a href="#maincontent" name="maincontent" class="accessibility_cta" tabindex="0">
     Skip to main content
   </a>
   <header class="hero hero-bg is-fullheight">
@@ -32,33 +32,33 @@
           <div id="navbarMenu" class="navbar-menu">
             <div class="navbar-end">
               <span class="navbar-item" role="menuitem">
-                <a class="button is-white is-outlined" tabindex="1" role="none">
+                <a class="button is-white is-outlined" tabindex="0" role="none">
                   <span class="icon">
-                    <i class="fa fa-home"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
                   </span>
                   <span>Home</span>
                 </a>
               </span>
               <span class="navbar-item" role="menuitem">
-                <a class="button is-white is-outlined" tabindex="1" role="none">
+                <a class="button is-white is-outlined" tabindex="0" role="none">
                   <span class="icon">
-                    <i class="fab fa-superpowers"></i>
+                    <i class="fab fa-superpowers" aria-hidden="true"></i>
                   </span>
                   <span>Examples</span>
                 </a>
               </span>
               <span class="navbar-item" role="menuitem">
-                <a class="button is-white is-outlined" tabindex="1" role="none">
+                <a class="button is-white is-outlined" tabindex="0" role="none">
                   <span class="icon">
-                    <i class="fa fa-book"></i>
+                    <i class="fa fa-book" aria-hidden="true"></i>
                   </span>
                   <span>Documentation</span>
                 </a>
               </span>
               <span class="navbar-item" role="menuitem">
-                <a class="button is-white is-outlined" tabindex="1" role="none">
+                <a class="button is-white is-outlined" tabindex="0" role="none">
                   <span class="icon">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github" aria-hidden="true"></i>
                   </span>
                   <span>View Source</span>
                 </a>
@@ -79,10 +79,10 @@
           <div class="box">
             <div class="field is-grouped">
               <p class="control is-expanded">
-                <input class="input" type="text" aria-labelledby="notificationControl" tabindex="1">
+                <input class="input" type="text" aria-label="Provide an email to get notifications" tabindex="0">
               </p>
               <p class="control">
-                <a class="button is-info accessible-button-bgcolor" role="button" tabindex="0" id="notificationControl">Notify Me</a>
+                <a class="button is-info accessible-button-bgcolor" role="button" tabindex="0">Notify Me</a>
               </p>
             </div>
           </div>
@@ -92,9 +92,9 @@
   </header>
 
   <main id="maincontent">
-    <section class="section" id="about" aria-labelledby="titleAbout">
+    <section class="section" id="about" aria-label="About Us">
       <header class="section-heading has-text-centered">
-        <h2 class="title is-2"id="titleAbout">About Us</h2>
+        <h2 class="title is-2">About Us</h2>
         <h3 class="subtitle is-5">We of all trades, master of "some"</h3>
         <div class="container">
           <p>Web developers with more than <b>4 years</b> of well-rounded experience with a degree in the
@@ -106,8 +106,8 @@
         </div>
       </header>
 
-      <section class="content container" aria-labelledby="titleMain">
-        <h1 class="is-1 title" id="titleMain">Hello World</h1>
+      <section class="content container" aria-label="Hello World">
+        <h1 class="is-1 title">Hello World</h1>
         <p>Lorem ipsum<sup><a>[1]</a></sup> dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque. Sub<sub>script</sub> works as well!</p>
         <h2 class="is-2 title">Second level</h2>
         <p>Curabitur accumsan turpis pharetra <b>augue tincidunt</b> blandit. Quisque condimentum maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.</p>
@@ -197,10 +197,10 @@
       </section>
     </section>
 
-    <section class="hero has-background-grey-light" aria-labelledby="titleFeatures">
+    <section class="hero has-background-grey-light" aria-label="About key features">
       <div class="container features">
         <header class="section-heading has-text-centered">
-          <h2 class="title is-2" id="titleFeatures">Three key features</h2>
+          <h2 class="title is-2">Three key features</h2>
           <h3 class="subtitle is-5 accessible-header-color">We don't hide what we do</h3>
         </header>
 
@@ -208,7 +208,7 @@
           <article class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fa fa-paw"></i>
+                <i class="fa fa-paw" aria-hidden="true"></i>
               </div>
               <div class="card-content">
                 <div class="content">
@@ -223,7 +223,7 @@
           <article class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fab fa-empire"></i>
+                <i class="fab fa-empire" aria-hidden="true"></i>
               </div>
               <div class="card-content">
                 <div class="content">
@@ -239,7 +239,7 @@
           <article class="column is-4">
             <div class="card is-shady">
               <div class="card-image has-text-centered">
-                <i class="fab fa-apple"></i>
+                <i class="fab fa-apple" aria-hidden="true"></i>
               </div>
               <div class="card-content">
                 <div class="content">
@@ -254,30 +254,30 @@
       </div>
     </section>
 
-    <section class="hero is-info accessible-header-bgcolor" aria-labelledby="titleTopics">
+    <section class="hero is-info accessible-header-bgcolor" aria-label="List of topics">
       <header class="hero-body">
         <div class="container">
-          <h2 class="title" id="titleTopics">List of topics</h2>
+          <h2 class="title">List of topics</h2>
           <h3 class="subtitle">We are always in touch we the outside world</h3>
         </div>
       </header>
       <div class="tabs is-boxed is-centered main-menu" id="nav" role="tabpanel">
-        <ul>
+        <ul role='tablist'>
           <li data-target="pane-1" id="1" class="is-active accessible-text-fb" role="tab">
             <a role="none">
-              <span class="icon is-small"><i class="fa fa-image"></i></span>
+              <span class="icon is-small"><i class="fa fa-image" aria-hidden="true"></i></span>
               <span>Pictures</span>
             </a>
           </li>
           <li data-target="pane-3" id="3" role="tab" class="accessible-text-fb">
             <a role="none">
-              <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+              <span class="icon is-small"><i class="fab fa-superpowers" aria-hidden="true"></i></span>
               <span>Team</span>
             </a>
           </li>
           <li data-target="pane-4" id="4" role="tab" class="accessible-text-fb">
             <a role="none">
-              <span class="icon is-small"><i class="fa fa-film"></i></span>
+              <span class="icon is-small"><i class="fa fa-film" aria-hidden="true"></i></span>
               <span>Video</span>
             </a>
           </li>
@@ -347,7 +347,7 @@
           <div class="column">
             <div class="media">
               <div class="media-left">
-                <i class="fab fa-github-square fa-4x"></i>
+                <i class="fab fa-github-square fa-4x" aria-hidden="true"></i>
               </div>
               <div class="media-content">
                 <article class="content">
@@ -360,7 +360,7 @@
             </div>
             <div class="media">
               <div class="media-left">
-                <i class="fab fa-empire fa-4x"></i>
+                <i class="fab fa-empire fa-4x" aria-hidden="true"></i>
               </div>
               <div class="media-content">
                 <article class="content">
@@ -375,7 +375,7 @@
           <div class="column">
             <div class="media">
               <div class="media-left">
-                <i class="fab fa-ravelry fa-4x"></i>
+                <i class="fab fa-ravelry fa-4x" aria-hidden="true"></i>
               </div>
               <div class="media-content">
                 <article class="content">
@@ -388,7 +388,7 @@
             </div>
             <div class="media">
               <div class="media-left">
-                <i class="fab fa-github-alt fa-4x"></i>
+                <i class="fab fa-github-alt fa-4x" aria-hidden="true"></i>
               </div>
               <div class="media-content">
                 <article class="content">
@@ -415,10 +415,10 @@
       </div>
     </div>
 
-    <section class="section has-background-grey-lighter" aria-labelledby="titleEvents">
+    <section class="section has-background-grey-lighter" aria-label="Upcoming events">
       <div class="container has-text-centered">
           <header class="section-heading has-text-centered">
-            <h2 class="title is-2" id="titleEvents">Upcoming events</h2>
+            <h2 class="title is-2">Upcoming events</h2>
             <h3 class="subtitle is-5">Outcoming dates for the best options</h3>
           </header>
 
@@ -520,8 +520,8 @@
     </section>
 
     <section class="section">
-      <header class="section-heading has-text-centered" aria-labelledby="titleServices">
-        <h2 class="title is-2" id="titleServices">Services</h2>
+      <header class="section-heading has-text-centered" aria-label="Services">
+        <h2 class="title is-2">Services</h2>
         <h3 class="subtitle is-5">What can I do for you?</h3>
       </header>
       <div class="container">
@@ -567,10 +567,10 @@
       </div>
     </section>
 
-    <section class="section has-background-grey-lighter" aria-labelledby="titlePfotos">
+    <section class="section has-background-grey-lighter" aria-label="Photos from past events">
       <div class="container">
         <header class="section-heading has-text-centered">
-          <h2 class="title is-2" id="titlePfotos">Photos from past events</h2>
+          <h2 class="title is-2">Photos from past events</h2>
         </header>
 
         <div class="container portfolio-container">
@@ -733,10 +733,10 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="titleForum">
+    <section class="section" aria-label="Forum">
       <div class="container">
         <header class="section-heading has-text-centered">
-          <h2 class="title is-2" id="titleForum">Forum</h2>
+          <h2 class="title is-2">Forum</h2>
           <h3 class="subtitle is-5">Discuss any topic with no leaving this page</h3>
         </header>
 
@@ -774,7 +774,7 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light accessible-text"><i class="fa fa-comments"></i> 1</span>
+                    <span class="has-text-grey-light accessible-text" aria-label="commentaries"><i class="fa fa-comments" aria-hidden="true"></i> 1</span>
                   </div>
                 </div>
               </div>
@@ -796,7 +796,7 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light accessible-text"><i class="fa fa-comments"></i> 0</span>
+                    <span class="has-text-grey-light accessible-text" aria-label="commentaries"><i class="fa fa-comments" aria-hidden="true"></i> 0</span>
                   </div>
                 </div>
               </div>
@@ -818,7 +818,7 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light accessible-text"><i class="fa fa-comments"></i> 13</span>
+                    <span class="has-text-grey-light accessible-text" aria-label="commentaries"><i class="fa fa-comments" aria-hidden="true"></i> 13</span>
                   </div>
                 </div>
               </div>
@@ -840,7 +840,7 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light accessible-text"><i class="fa fa-comments"></i> 2</span>
+                    <span class="has-text-grey-light accessible-text" aria-label="commentaries"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                   </div>
                 </div>
               </div>
@@ -862,7 +862,7 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light accessible-text"><i class="fa fa-comments"></i> 2</span>
+                    <span class="has-text-grey-light accessible-text" aria-label="commentaries"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                   </div>
                 </div>
               </div>
@@ -884,7 +884,7 @@
                     </div>
                   </div>
                   <div class="media-right">
-                    <span class="has-text-grey-light accessible-text"><i class="fa fa-comments"></i> 2</span>
+                    <span class="has-text-grey-light accessible-text" aria-label="commentaries"><i class="fa fa-comments" aria-hidden="true"></i> 2</span>
                   </div>
                 </div>
               </div>
@@ -894,10 +894,10 @@
       </div>
     </section>
 
-    <section class="section has-background-light" aria-labelledby="titleContact">
+    <section class="section has-background-light" aria-label="Contact us">
       <div class="container">
         <header class="section-heading has-text-centered">
-          <h2 class="title is-2" id="titleContact">Contact us</h2>
+          <h2 class="title is-2">Contact us</h2>
           <h3 class="subtitle is-5">Don't hesitate, ask anything</h3>
         </header>
 
@@ -906,7 +906,7 @@
             <label class="label">
               Name
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" type="text" placeholder="Name">
               </div>
             </label>
             
@@ -916,12 +916,12 @@
             <label class="label">
               Username
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text">
+                <input class="input is-success" type="text" placeholder="Username">
                 <span class="icon is-small is-left">
-                  <i class="fas fa-user"></i>
+                  <i class="fas fa-user" aria-hidden="true"></i>
                 </span>
                 <span class="icon is-small is-right">
-                  <i class="fas fa-check"></i>
+                  <i class="fas fa-check" aria-hidden="true"></i>
                 </span>
               </div>
             </label>
@@ -934,10 +934,10 @@
               <div class="control has-icons-left has-icons-right">
                 <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
                 <span class="icon is-small is-left">
-                  <i class="fas fa-envelope"></i>
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
                 </span>
                 <span class="icon is-small is-right">
-                  <i class="fas fa-exclamation-triangle"></i>
+                  <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
                 </span>
               </div>
             </label>
@@ -962,7 +962,7 @@
             <label class="label">
               Message
               <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
+                <textarea class="textarea" placeholder="Type a message"></textarea>
               </div>
             </label>
           </div>
@@ -1154,10 +1154,10 @@
 
       <div class="content has-text-centered">
         <div class="soc">
-          <a role="none"><i class="fab fa-github-alt fa-2x"></i></a>
-          <a role="none"><i class="fab fa-youtube fa-2x"></i></a>
-          <a role="none"><i class="fab fa-facebook fa-2x"></i></a>
-          <a role="none"><i class="fab fa-twitter fa-2x"></i></a>
+          <a role="none"><i class="fab fa-github-alt fa-2x" aria-hidden="true"></i></a>
+          <a role="none"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a>
+          <a role="none"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+          <a role="none"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
         </div>
         <p>The source code is licensed <a href="http://opensource.org/licenses/mit-license.php" class="accessible-link accessible-text">MIT</a>.</p>
       </div>
