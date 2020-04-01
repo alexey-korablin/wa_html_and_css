@@ -261,21 +261,21 @@
           <h3 class="subtitle">We are always in touch we the outside world</h3>
         </div>
       </header>
-      <div class="tabs is-boxed is-centered main-menu" id="nav" role="tabpanel">
+      <div class="tabs is-boxed is-centered main-menu" id="nav" aria-label="topics" role="tablist">
         <ul role='tablist'>
-          <li data-target="pane-1" id="1" class="is-active accessible-text-fb" role="tab">
+          <li data-target="pane-1" id="1" aria-selected="true" class="is-active accessible-text-fb" role="tab">
             <a role="none">
               <span class="icon is-small"><i class="fa fa-image" aria-hidden="true"></i></span>
               <span>Pictures</span>
             </a>
           </li>
-          <li data-target="pane-3" id="3" role="tab" class="accessible-text-fb">
+          <li data-target="pane-3" id="3" aria-selected="false" role="tab" class="accessible-text-fb" tabindex="-1">
             <a role="none">
               <span class="icon is-small"><i class="fab fa-superpowers" aria-hidden="true"></i></span>
               <span>Team</span>
             </a>
           </li>
-          <li data-target="pane-4" id="4" role="tab" class="accessible-text-fb">
+          <li data-target="pane-4" id="4" aria-selected="false" role="tab" class="accessible-text-fb" tabindex="-1">
             <a role="none">
               <span class="icon is-small"><i class="fa fa-film" aria-hidden="true"></i></span>
               <span>Video</span>
@@ -286,7 +286,7 @@
     </section>
 
     <div class="tab-content container">
-      <div class="tab-pane is-active" id="pane-1" class="level">
+      <div class="tab-pane is-active" id="pane-1" aria-labelledby="1" class="level" role="tabpanel">
         <div class="container">
           <div class="columns features">
             <div class="column is-4">
@@ -342,7 +342,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-3">
+      <div class="tab-pane" id="pane-3" aria-labelledby="3" role="tabpanel">
         <div class="columns medias">
           <div class="column">
             <div class="media">
@@ -403,7 +403,7 @@
         </div>
       </div>
 
-      <div class="tab-pane" id="pane-4">
+      <div class="tab-pane" id="pane-4" aria-labelledby="4" role="tabpanel">
         <div class="columns is-centered">
           <div class="column is-three-quarters">
             <h2 class="title has-text-centered">Inspired video</h2>
