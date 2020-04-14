@@ -261,25 +261,25 @@
           <h3 class="subtitle">We are always in touch we the outside world</h3>
         </div>
       </header>
-      <div class="tabs is-boxed is-centered main-menu" id="nav" aria-label="topics" role="tablist">
-        <ul role='tablist'>
-          <li data-target="pane-1" id="1" aria-selected="true" class="is-active accessible-text-fb" role="tab">
-            <a role="none">
+      <div class="tabs is-boxed is-centered main-menu" id="nav">
+        <ul role='tablist' aria-label="topics">
+          <li data-target="pane-1" id="1" aria-selected="true" class="is-active accessible-text-fb" role="tab" tabindex="-1">
+            <button>
               <span class="icon is-small"><i class="fa fa-image" aria-hidden="true"></i></span>
               <span>Pictures</span>
-            </a>
+            </button>
           </li>
           <li data-target="pane-3" id="3" aria-selected="false" role="tab" class="accessible-text-fb" tabindex="-1">
-            <a role="none">
+            <button>
               <span class="icon is-small"><i class="fab fa-superpowers" aria-hidden="true"></i></span>
               <span>Team</span>
-            </a>
+            </button>
           </li>
           <li data-target="pane-4" id="4" aria-selected="false" role="tab" class="accessible-text-fb" tabindex="-1">
-            <a role="none">
+            <button>
               <span class="icon is-small"><i class="fa fa-film" aria-hidden="true"></i></span>
               <span>Video</span>
-            </a>
+            </button>
           </li>
         </ul>
       </div>
@@ -906,7 +906,7 @@
             <label class="label">
               Name
               <div class="control">
-                <input class="input" type="text" placeholder="Name">
+                <input class="input" type="text" placeholder="Enter your name">
               </div>
             </label>
             
@@ -916,7 +916,7 @@
             <label class="label">
               Username
               <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" placeholder="Username">
+                <input class="input is-success" type="text" placeholder="Enter your nickname">
                 <span class="icon is-small is-left">
                   <i class="fas fa-user" aria-hidden="true"></i>
                 </span>

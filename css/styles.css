@@ -196,7 +196,11 @@
 .hero.is-info.accessible-header-bgcolor .subtitle {
   color: #fff;
 }
-.hero.is-info .tabs.is-boxed li.is-active.accessible-text-fb a span,
+.hero.is-info
+  .tabs.is-boxed
+  li.is-active.accessible-text-fb
+  button
+  span,
 .accessible-text {
   color: #0e78be;
 }
@@ -285,4 +289,36 @@ input[type='radio']:focus,
 a:focus {
   border-color: #3273dc;
   box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.tabs button {
+  align-items: center;
+  border-bottom: 1px solid #dbdbdb;
+  /* color: #4a4a4a; */
+  color: #fff;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
+  padding: 0.5em 1em;
+  vertical-align: top;
+  border: none;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.tabs button:hover {
+  background-color: rgba(10, 10, 10, 0.1);
+}
+
+.tabs .is-active button {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: #209cee;
+  background-color: #fff;
+  outline: none;
+}
+
+.tabs button span {
+  font-size: 1rem;
 }
